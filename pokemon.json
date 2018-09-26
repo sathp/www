@@ -1,0 +1,259 @@
+{
+  "startingRoom": "MatthewsStreet",
+  "endingRoom": "Siebel1314",
+  "rooms": [
+    {
+      "name": "MatthewsStreet",
+      "description": "You are on Matthews, outside the Siebel Center",
+      "items": [
+      	{
+      	  "name": "Illini-Cash",
+      	  "damage": "0.0"
+      	},
+      	{
+      	  "name": "Potion",
+      	  "damage": "30"
+      	}
+      ],
+      "directions": [
+        {
+          "directionName": "East",
+          "room": "SiebelEntry"
+        }
+      ],
+      "monstersInRoom": ["Caterpie", "Pidgey"]
+    },
+    {
+      "name": "SiebelEntry",
+      "description": "You are in the west entry of Siebel Center.  You can see the elevator, the ACM office, and hallways to the north and east.",
+	  "items": [
+	  	{
+      	  "name": "Potion",
+      	  "damage": "30"
+      	},
+      	{
+      	  "name": "Key",
+      	  "damage": "0"
+      	}
+	  ],
+      "directions": [
+        {
+          "directionName": "West",
+          "room": "MatthewsStreet"
+        },
+        {
+          "directionName": "Northeast",
+          "room": "AcmOffice"
+        },
+        {
+          "directionName": "North",
+          "room": "SiebelNorthHallway"
+        },
+        {
+          "directionName": "East",
+          "room": "SiebelEastHallway"
+        }
+      ],
+      "monstersInRoom": ["Zubat"]
+    },
+    {
+      "name": "AcmOffice",
+      "description": "You are in the ACM office.  There are lots of friendly ACM people.",
+      "items": [
+        {
+      	  "name": "Pizza",
+      	  "damage": "25"
+      	},
+        {
+      	  "name": "Swag",
+      	  "damage": "30"
+      	}
+      ],
+      "directions": [
+        {
+          "directionName": "South",
+          "room": "SiebelEntry"
+        }
+      ],
+      "monstersInRoom": ["Bulbasaur", "Charmander", "Squirtle"]
+    },
+    {
+      "name": "SiebelNorthHallway",
+      "description": "You are in the north hallway.  You can see Siebel 1112 and the door toward NCSA.",
+      "directions": [
+        {
+          "directionName": "South",
+          "room": "SiebelEntry"
+        }, 
+        {
+          "directionName": "NorthEast",
+          "room": "Siebel1112"
+        }
+      ],
+      "monstersInRoom": ["Pikachu", "Ivysaur"]
+    },
+    {
+      "name": "Siebel1112",
+      "description": "You are in Siebel 1112.  There is space for two code reviews in this room.",
+      "items": [
+      	{
+      	  "name": "CUMTD-Map",
+      	  "damage": "0"
+      	}
+      ],
+      "directions": [
+        {
+          "directionName": "West",
+          "room": "SiebelNorthHallway"
+        }
+      ],
+      "monstersInRoom": ["Charmeleon", "Wartortle"]
+    },
+    {
+      "name": "SiebelEastHallway",
+      "description": "You are in the east hallway.  You can see Einstein Bros' Bagels and a stairway.",
+      "items": [
+	  	{
+      	  "name": "Ulimate Pokéball",
+      	  "damage": "30"
+      	}
+      ],
+      "directions": [
+        {
+          "directionName": "West",
+          "room": "SiebelEntry"
+        },
+        {
+          "directionName": "South",
+          "room": "Siebel1314"
+        },
+        {
+          "directionName": "Down",
+          "room": "SiebelBasement"
+        }
+      ],
+      "monstersInRoom": ["Blastoise"]
+    },
+    {
+      "name": "Siebel1314",
+      "description": "You are in Siebel 1314.  There are happy CS 126 students doing a code review.",
+      "directions": [
+        {
+          "directionName": "North",
+          "room": "SiebelEastHallway"
+        }
+      ]
+    },
+    {
+      "name": "SiebelBasement",
+      "description": "You are in the basement of Siebel.  You see tables with students working and door to computer labs.",
+      "directions": [
+        {
+          "directionName": "Up",
+          "room": "SiebelEastHallway"
+        }
+      ],
+      "monstersInRoom": ["Charizard"]
+    }
+  ],
+  "monsters": [
+	{
+	  "name": "Bulbasaur",
+	  "attack": "25",
+	  "defense": "55",
+	  "health": "100"
+	},
+	{
+	  "name": "Charmander",
+	  "attack": "35",
+	  "defense": "55",
+	  "health": "100"
+	},
+	{
+	  "name": "Squirtle",
+	  "attack": "35",
+	  "defense": "55",
+	  "health": "100"
+	},
+	{
+	  "name": "Caterpie",
+	  "attack": "35",
+	  "defense": "25",
+	  "health": "100"
+	},
+	{
+	  "name": "Pidgey",
+	  "attack": "35",
+	  "defense": "25",
+	  "health": "100"
+	},
+	{
+	  "name": "Pikachu",
+	  "attack": "35",
+	  "defense": "55",
+	  "health": "100"
+	},
+	{
+	  "name": "Zubat",
+	  "attack": "25",
+	  "defense": "45",
+	  "health": "100"
+	},
+	{
+	  "name": "Ivysaur",
+	  "attack": "65",
+	  "defense": "75",
+	  "health": "100"
+	},
+	{
+	  "name": "Charmeleon",
+	  "attack": "75",
+	  "defense": "75",
+	  "health": "100"
+	},
+	{
+	  "name": "Charizard",
+	  "attack": "85",
+	  "defense": "100",
+	  "health": "100"
+	},
+	{
+	  "name": "Wartortle",
+	  "attack": "75",
+	  "defense": "75",
+	  "health": "100"
+	},
+	{
+	  "name": "Blastoise",
+	  "attack": "85",
+	  "defense": "100",
+	  "health": "100"
+	}
+  ],
+  "player": {
+  	"name": "Ash",
+  	"items": [
+  		{
+  		  "name": "Pokédex",
+  		  "damage": "0"
+  		},
+  		{
+  		  "name": "iCard",
+  		  "damage": "0"
+  		},
+  		{
+  		  "name": "Pokéball",
+  		  "damage": "25"
+  		},
+  		{
+  		  "name": "Master-Pokéball",
+  		  "damage": "75"
+  		}
+  	],
+  	"attack": "35",
+  	"defense": "25",
+  	"health": "100",
+  	"level": "1"
+  }
+
+}
